@@ -1,0 +1,23 @@
+{
+    "name": "trellode",
+    "version": "1.0.0",
+    "description": "A Node.js CLI tool for managing Trello boards, lists, and cards via the Trello REST API",
+    "main": "trellode.js",
+    "bin": {
+        "trellode": "./trellode.js"
+    },
+    "scripts": {
+        "start": "node trellode.js"
+    },
+    "keywords": [
+        "trello",
+        "cli",
+        "boards",
+        "cards"
+    ],
+    "author": "",
+    "license": "MIT",
+    "engines": {
+        "node": ">=14.0.0"
+    }
+}
