@@ -60,10 +60,18 @@ trellode --check-auth
 
 This step wires the CLI into Claude Code so it knows the tool exists and how to use it. You copy the Markdown files from this repo into Claude Code's skills directory:
 
+- Windows
 ```powershell
 New-Item -ItemType Directory -Force "$env:USERPROFILE\.claude\skills\trellode"
 Copy-Item "skills\trellode\SKILL.md"     "$env:USERPROFILE\.claude\skills\trellode\"
 Copy-Item "skills\trellode\REFERENCE.md" "$env:USERPROFILE\.claude\skills\trellode\"
+```
+
+- macOS, Linux
+```powershell
+mkdir -p ~/.claude/skills/trellode
+cp skills/trellode/SKILL.md ~/.claude/skills/trellode/
+cp skills/trellode/REFERENCE.md ~/.claude/skills/trellode/
 ```
 
 **What these files do:**
