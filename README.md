@@ -20,7 +20,10 @@ Once both are in place, you can ask Claude Code in natural language ("create a c
 
 - [Node.js](https://nodejs.org/) v16 or later
 - A Trello account with an API key and token (see [Authentication](#authentication) below)
-
+- Typescript compiler
+```powershell
+npm install typescript
+```
 ---
 
 ## Installation
