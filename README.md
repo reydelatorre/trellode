@@ -36,6 +36,8 @@ From the project directory:
 npm install -g .
 ```
 
+*macOS note:* Do not install from your `~/Downloads` folder. macOS applies quarantine restrictions to files in Downloads that will prevent Node from reading the entry point, even after a global install. Clone or move the repo to a non-sandboxed location (e.g. `~/trellode`) before running `npm install -g .`
+
 This compiles the TypeScript source and links the `trellode` command globally. Verify it worked:
 
 ```powershell
